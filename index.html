@@ -9,14 +9,47 @@
 <meta name="keywords" content="................">
 <meta name="author" content="Marek Maciejewski">
 <meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
-
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
     <![endif]-->
-
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  </head>
-  <body>
 
+  <body>
+    <div id="wrapper">
+    <header>
+      <div id="header">
+        <nav id="nav-bar">
+          <a class="nav-link" href="#home">Home</a>
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#platforms">Platforms</a>
+        </nav>
+        <div class="logo">
+          <img id="header-img" src="img/logo.png" alt="musicapp logo">
+          <h1>MusicApp</h1>
+        </div>
+        <nav id="nav-bar-r">
+          <a class="nav-link" href="#vid">Video</a>
+          <a class="nav-link" href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+<section id="home"></section>
+<section id="about"></section>
+<sectiona id="platforms"></section>
+<section id="vid">
+  <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/8N_tupPBtWQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</section>
+
+<section id="contact">Contact</section>
+  <form id="form" action="https://www.freecodecamp.com/email-submit">
+    <div class="mail">
+      <label for="email">Enter email:</label>
+      <input id="email" name="email" type="email" placeholder="Enter email" required>
+    </div>
+    <input id="submit" type="submit"  value="Send">
+
+  </form>
+    </div>
   </body>
 </html>
