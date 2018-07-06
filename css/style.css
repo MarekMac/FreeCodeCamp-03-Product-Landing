@@ -18,8 +18,8 @@ body{
 }
 
 header{
-  background: #000;
-  border-bottom: 2px solid #17b978;
+background: url(../img/binding_dark.png);  
+border-bottom: 2px solid #17b978;
   margin: 0 auto;
   position: fixed;
   top: 0;
@@ -33,6 +33,7 @@ header{
 
 #header{
   padding: 20px 0 15px 0;
+  margin: 0 auto;
   max-width: 1280px;
   left: auto;
   display: flex;
@@ -45,7 +46,7 @@ header{
   display: flex;
   justify-content: center;
   max-width: 35%;
-  padding-left: 5%;
+  padding-left: 3%;
 }
 
 #nav-bar a{
@@ -75,7 +76,7 @@ header{
 #nav-bar-r a{
 	color: #fff;
 	text-decoration: none;
-  margin: 0 25%;
+  margin: 0 12%;
   font-size: 1.5em;
 	letter-spacing: 2px;
 	transition: border 0.3s linear;
@@ -108,36 +109,161 @@ header{
   border-bottom: 2px solid #17b978;
 }
 
-#home h1{
-  font-size: 4em;
-  position: absolute;
-  top: 250px;
-  padding: 20px;
-  border: 4px solid black;
-  max-width: 300px;
-  left: 10%;
+.homecontent{
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding-top: 225px;
 }
 
-#home h2{
-  font-size: 5em;
-  position: absolute;
-  top: 250px;
-  padding: 20px;
+#home h1{
+    font-family: 'Trykker', serif;
+
+  font-size: 4em;
+  border: 4px solid black;
   max-width: 300px;
-  left: 50%;
+  color: #000;
+
+
+}
+
+.homecontent a{
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.7em;
+  letter-spacing: 5px;
+  padding: 20px 60px;
+  color: #a7ff83;
+  background: #000;
+  border-radius: 160px;
+  margin: 0 0 200px 0;
+  -webkit-box-shadow: 0px 0px 100px 5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 100px 5px rgba(0,0,0,0.75);
+  box-shadow: 3px 3px 5px 1px rgba(0,0,0,0.35);
+}
+
+
+
+#wrapper{
+  padding: 1% 4%;
+  margin: 0 auto;
+  max-width: 1280px;
+  background: url('../img/tweed.png');
+  text-align: justify;
+
+}
+
+h1{
+  font-family: 'Trykker', serif;
+  font-size: 4em;
+  text-align: center;
+  padding: 2%;
   color: #a7ff83;
 }
 
-#wrapper{
-  margin: 0 auto;
-  max-width: 1280px;
-  background: url('../img/tweed.png')
+#about{
+  padding-top: 2%;
 }
 
+#about h3{
+  padding-bottom: 5%;
+}
 
+.half{
+  display: flex;
+  justify-content: space-between;
+}
 
+.one-half{
+  padding: 3% 4%;
+  text-align: center;
+  width: 40%;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 157px 9px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 157px 9px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 157px 9px rgba(0,0,0,0.5);
+}
 
+.one-half h2{
+  font-family: 'Trykker', serif;
+  font-size: 2em;
+  padding: 0 0 6% 0;
+  letter-spacing: 1px;
+  color: white;
+}
 
+.one-half img{
+  max-width: 100%;
+  padding: 0 0 4% 0;
+  height: auto;
+}
+
+#platforms{
+  margin: 4% 0;
+}
+
+.platformscontent{
+  display: flex;
+  justify-content: space-between;
+    -webkit-box-shadow: 0px 0px 157px 9px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 157px 9px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 157px 9px rgba(0,0,0,0.5);
+}
+
+.platformscontent h3{
+  width: 40%;
+  padding: 4%;
+}
+
+.platformscontent img{
+size: cover;
+}
+
+.parallax{
+  max-width: 1440px;
+  background: url("../img/music-play-spinning-21148.jpg") fixed;
+  background-size: 100%;
+}
+
+.parallax h1{
+  padding: 100px 0;
+}
+
+.platformscontent h3{
+  width: 40%;
+  padding: 2%;
+}
+
+.vidcontent{
+margin: 3% 0;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+}
+
+iframe{
+padding: 0 10%;
+}
+
+#wrapper2{
+  margin: 0 auto;
+  max-width: 1280px;
+  background: url('../img/tweed.png');
+  text-align: justify;
+}
+
+.socials{
+display: flex;
+justify-content: space-between;
+align-items: center;
+background: gray;
+height: 120px;
+}
+
+.specials a{
+  color: white;
+}
 
 
 /*--------------------Media Querry----------------------*/
