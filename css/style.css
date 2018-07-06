@@ -235,15 +235,15 @@ size: cover;
 }
 
 .vidcontent{
-margin: 3% 0;
-display: flex;
-justify-content: center;
-align-items: center;
-color: white;
+  margin: 3% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 
 iframe{
-padding: 0 10%;
+  padding: 0 10%;
 }
 
 #wrapper2{
@@ -254,15 +254,17 @@ padding: 0 10%;
 }
 
 .socials{
-display: flex;
-justify-content: space-between;
-align-items: center;
-background: gray;
-height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: gray;
+  height: 120px;
+  text-align: center;
 }
 
-.specials a{
+.socials a{
   color: white;
+  text-decoration: none;
 }
 
 
