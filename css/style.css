@@ -14,7 +14,7 @@ body{
 /* Background pattern from Toptal Subtle Patterns */
 	background: url(../img/binding_dark.png);
 	font-family: 'Quicksand', sans-serif;
-
+color: rgb(205, 205, 205);
 }
 
 h1{
@@ -26,8 +26,8 @@ h1{
 }
 
 header{
-background: url(../img/binding_dark.png);
-border-bottom: 2px solid #17b978;
+  background: url(../img/binding_dark.png);
+  border-bottom: 2px solid #17b978;
   margin: 0 auto;
   position: fixed;
   top: 0;
@@ -40,10 +40,9 @@ border-bottom: 2px solid #17b978;
 }
 
 #header{
-  padding: 20px 0 15px 0;
+  padding: 20px 4% 14px 4%;
   margin: 0 auto;
   max-width: 1280px;
-  left: auto;
   display: flex;
 	justify-content: space-around;
   align-items: center;
@@ -53,9 +52,7 @@ border-bottom: 2px solid #17b978;
   height: 37px;
   display: flex;
   justify-content: center;
-  max-width: 35%;
-  padding-left: 3%;
-}
+  }
 
 #nav-bar a{
 	color: #fff;
@@ -77,8 +74,7 @@ border-bottom: 2px solid #17b978;
 #nav-bar-r{
   height: 37px;
   display: flex;
-  justify-content: space-between;
-  max-width: 35%;
+  justify-content: center;
 }
 
 #nav-bar-r a{
@@ -111,10 +107,12 @@ border-bottom: 2px solid #17b978;
 }
 
 #home{
+  padding: 0 4%;
 	background: url(../img/concert.jpg) 20% 50%;
-	max-width: 100%;
-	height: 700px;
+	max-width: 1280px;;
+	height: 800px;
   border-bottom: 2px solid #17b978;
+  margin: 0 auto;
 }
 
 #home h1{
@@ -145,6 +143,15 @@ padding-top: 225px;
   -webkit-box-shadow: 0px 0px 100px 5px rgba(0,0,0,0.35);
   -moz-box-shadow: 0px 0px 100px 5px rgba(0,0,0,0.35);
   box-shadow: 3px 3px 5px 1px rgba(0,0,0,0.35);
+  transition: all .1s linear;
+  transition-property: padding, box-shadow;
+}
+
+.homecontent a:hover{
+  padding: 30px 60px;
+  -webkit-box-shadow: 6px 6px 1px 5px rgba(0,0,0,0.35);
+  -moz-box-shadow: 6px 6px 1px 5px rgba(0,0,0,0.35);
+  box-shadow: 6px 6px 10px 2px rgba(0,0,0,0.35);
 }
 
 #wrapper{
@@ -198,21 +205,22 @@ padding-top: 225px;
 
 .platformscontent{
   display: flex;
-  align-items: flex-start;
-  justify-content: space-around;
+  justify-content: space-between;
   -webkit-box-shadow: 0px 0px 157px 9px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 157px 9px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 157px 9px rgba(0,0,0,0.5);
 }
 
 .platformscontent h3{
-  padding: 4%;
-}
+  margin: 0 auto;
+  line-height: 225%;}
 
 .platformscontent img{
-  max-width: 40%;
-  object-fit: contain;
-
+  width: 40%;
+  height: auto;
+  object-fit: cover;
+  height: auto;
+  max-height: 550px;
 }
 
 .parallax{
@@ -223,6 +231,9 @@ padding-top: 225px;
 
 .parallax h1{
   padding: 100px 0;
+  color: rgb(205, 205, 205);
+  font-size: 2em;
+  letter-spacing: 5px;
 }
 
 .platformscontent h3{
@@ -248,7 +259,7 @@ iframe{
   margin: 0 10%;
   font-size: 4em;
   color: #17b978;
-opacity: .8;
+  opacity: .8;
 }
 
 #wrapper2{
@@ -256,8 +267,6 @@ opacity: .8;
   padding: 2% 4%;
   max-width: 1280px;
   background: url('../img/tweed.png');
-  text-align: justify;
-
 }
 
 #contact{
@@ -268,15 +277,17 @@ opacity: .8;
 
 #form{
   display: flex;
+  width: 60%;
   align-items: center;
-}
+  justify-content: space-between;
+  }
 
 #submit{
   text-decoration: none;
   font-weight: 700;
   font-size: 1.7em;
   letter-spacing: 5px;
-  padding: 20px 60px;
+  padding: 2% 6%;
   color: #a7ff83;
   background: #000;
   border-radius: 160px;
@@ -285,9 +296,43 @@ opacity: .8;
   box-shadow: 3px 3px 5px 1px rgba(0,0,0,0.35);
 }
 
+label{
+  font-size: 1.7em;
+  padding-right: 2%;
+}
+
+.nam, .mail{
+padding: 3% 0;
+}
+
+.nam input{
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  background: #a7ff83;
+}
+
+.mail input{
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  border-radius: 5px;
+  background: #a7ff83;
+}
+
+input::placeholder{
+  padding-left: 10px;
+}
+
+#submit:hover{
+  cursor: pointer;
+}
+
 
 .socials{
   max-width: 1280px;
+  padding: 0 4%;
+  background: black;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -297,11 +342,11 @@ opacity: .8;
 .socials a{
   color: white;
   text-decoration: none;
-  padding-top: 4%;
-  font-size: 5em;
+  padding: 4% 0;
+  font-size: 4em;
   width: 25%;
-  height: 160px;
-}
+  transition: background .2s linear;
+  }
 
 a.fb:hover{
   background: #3B5998;
@@ -319,11 +364,30 @@ a.yt:hover{
   background: #cc181e;
 }
 
+footer{
+  text-align: center;
+  padding: 4%;
+  font-size: 1.4em;
+  color: white;
+  letter-spacing: 3px;
+}
+
+footer a{
+  color: #a7ff83;
+  transition: color .2s linear;
+
+}
+
+footer a:hover{
+  color: #5efb1c;
+}
+
 /*--------------------Media Querry----------------------*/
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 768px){
 
-  .logo h1{
+  footer a{
+    color: red;
   }
 }
 
