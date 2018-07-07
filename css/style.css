@@ -142,8 +142,8 @@ padding-top: 225px;
   background: #000;
   border-radius: 160px;
   margin: 0 0 200px 0;
-  -webkit-box-shadow: 0px 0px 100px 5px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 100px 5px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 0px 100px 5px rgba(0,0,0,0.35);
+  -moz-box-shadow: 0px 0px 100px 5px rgba(0,0,0,0.35);
   box-shadow: 3px 3px 5px 1px rgba(0,0,0,0.35);
 }
 
@@ -153,7 +153,6 @@ padding-top: 225px;
   max-width: 1280px;
   background: url('../img/tweed.png');
   text-align: justify;
-
 }
 
 #about{
@@ -174,8 +173,8 @@ padding-top: 225px;
   text-align: center;
   width: 40%;
   overflow: hidden;
-  -webkit-box-shadow: 0px 0px 157px 9px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 157px 9px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 0px 157px 9px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 0px 157px 9px rgba(0,0,0,0.5);
   box-shadow: 0px 0px 157px 9px rgba(0,0,0,0.5);
 }
 
@@ -217,7 +216,7 @@ padding-top: 225px;
 }
 
 .parallax{
-  max-width: 1440px;
+  max-width: 1280px;
   background: url("../img/music-play-spinning-21148.jpg") fixed;
   background-size: 100%;
 }
@@ -240,30 +239,85 @@ padding-top: 225px;
 }
 
 iframe{
-  padding: 0 10%;
+  -webkit-box-shadow: 0px 0px 157px 9px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 0px 157px 9px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 157px 9px rgba(0,0,0,0.5);
+}
+
+.vidcontent i{
+  margin: 0 10%;
+  font-size: 4em;
+  color: #17b978;
+opacity: .8;
 }
 
 #wrapper2{
   margin: 0 auto;
+  padding: 2% 4%;
   max-width: 1280px;
   background: url('../img/tweed.png');
   text-align: justify;
+
 }
 
-.socials{
+#contact{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: gray;
-  height: 120px;
+}
+
+#form{
+  display: flex;
+  align-items: center;
+}
+
+#submit{
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.7em;
+  letter-spacing: 5px;
+  padding: 20px 60px;
+  color: #a7ff83;
+  background: #000;
+  border-radius: 160px;
+  -webkit-box-shadow: 0px 0px 100px 5px rgba(0,0,0,0.35);
+  -moz-box-shadow: 0px 0px 100px 5px rgba(0,0,0,0.35);
+  box-shadow: 3px 3px 5px 1px rgba(0,0,0,0.35);
+}
+
+
+.socials{
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
   text-align: center;
 }
 
 .socials a{
   color: white;
   text-decoration: none;
+  padding-top: 4%;
+  font-size: 5em;
+  width: 25%;
+  height: 160px;
 }
 
+a.fb:hover{
+  background: #3B5998;
+}
+
+a.tw:hover{
+  background: #08a0e9;
+}
+
+a.gh:hover{
+  background: #913399;
+}
+
+a.yt:hover{
+  background: #cc181e;
+}
 
 /*--------------------Media Querry----------------------*/
 
